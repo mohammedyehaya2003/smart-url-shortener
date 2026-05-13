@@ -21,8 +21,6 @@ router.get('/test', getTest);
 // NEW route
 router.post('/shorten', shortenUrl);
 
-// New route for redirect the url // 
-router.get('/:code', redirectUrl);
 
 router.get('/stats/:code', getUrlStats);
 

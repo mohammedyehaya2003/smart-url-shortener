@@ -12,6 +12,9 @@ const urlRoutes = require('./src/routes/urlRoutes');
 // use routes
 app.use('/api', urlRoutes);
 
+const { redirectUrl } = require('./src/controllers/urlController');
+
+app.get('/:code', redirectUrl);
 
 // database connection // 
 pool.connect()
