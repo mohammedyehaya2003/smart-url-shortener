@@ -1,59 +1,63 @@
-# Smart URL Shortener
+# 🚀 Smart URL Shortener Backend
 
-## 📌 Project Overview
-A web application to shorten long URLs and track click analytics.
+Backend API service for the Smart URL Shortener application.
 
----
-
-## 🚀 Day 1 Progress
-- Setup Node.js environment
-- Initialized project using npm
-- Installed Express
-- Created basic server
-- Ran server on localhost:3000
+Built using Node.js, Express.js, and PostgreSQL.
 
 ---
 
-## 🧠 What I Learned
-- What is Node.js
-- What is Express
-- How backend server works
-- What is routing (app.get)
-- How to run server using Node
+## ✨ Features
+
+* URL shortening API
+* Custom short code support
+* URL redirection
+* PostgreSQL database integration
+* Error handling
+* REST API architecture
+* Backend deployment using Render
 
 ---
 
-## ▶️ How to Run Project
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   npm install
+* Node.js
+* Express.js
+* PostgreSQL
+* Render
 
-2. Run server:
-   node server.js
+---
 
-3. Open browser:
-   http://localhost:3000
+## 📡 API Endpoint
+
+### Create Short URL
+
+POST `/api/shorten`
+
+Example Request:
+
+```json
+{
+  "originalUrl": "https://amazon.com",
+  "customCode": "shop123"
+}
+```
+
+---
 
 
 
+## 🚀 What I Learned
 
-## 🚀 Day 2 Progress
-- Learned routing in Express
-- Created multiple API endpoints:
-  - `/api/hello`
-  - `/api/test`
-- Understood how server handles different URLs
-- Tested APIs using browser
+* REST API development
+* Backend routing
+* Database integration
+* Request & response handling
+* Deployment using Render
+* Error debugging
+* Full-stack integration
 
-### 🧠 What I Learned
-- What is routing in backend
-- Difference between different endpoints
-- How request (`req`) and response (`res`) work
-- How backend matches URL to correct function
+---
 
-### 🐞 Problems Faced
-- "Cannot GET /api/hello" error
+## ⚡ Note
 
-### ✅ How I Solved
-- Restarted server after code changes
-- Closed old browser tabs and tested again
+Backend is hosted on Render free tier, so the first request may take a few seconds to wake up the server.
